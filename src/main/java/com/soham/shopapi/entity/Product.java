@@ -42,5 +42,5 @@ public class Product {
     private boolean available;
 
     @Column(name = "Quantity")
-    private int Quantity;
+    private int quantity;
 }
