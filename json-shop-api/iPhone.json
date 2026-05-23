@@ -1,0 +1,10 @@
+{
+    "name": "iPhone 15 Pro",
+    "description": "Apple iPhone 15 Pro with A17 Pro chip and titanium design",
+    "brand": "Apple",
+    "price": 999.99,
+    "category": "Electronics",
+    "releaseDate": "2023-09-22",
+    "available": true,
+    "quantity": 50
+}

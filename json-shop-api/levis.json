@@ -1,0 +1,10 @@
+{
+    "name": "Levi's 501 Jeans",
+    "description": "Classic straight fit jeans in stretch denim",
+    "brand": "Levi's",
+    "price": 59.99,
+    "category": "Clothing",
+    "releaseDate": "2023-06-01",
+    "available": false,
+    "quantity": 0
+}

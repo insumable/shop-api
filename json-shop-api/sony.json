@@ -1,0 +1,10 @@
+{
+    "name": "Sony WH-1000XM5",
+    "description": "Industry-leading noise cancelling wireless headphones",
+    "brand": "Sony",
+    "price": 349.99,
+    "category": "Electronics",
+    "releaseDate": "2022-05-20",
+    "available": true,
+    "quantity": 35
+}
