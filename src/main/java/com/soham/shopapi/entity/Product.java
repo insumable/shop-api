@@ -1,5 +1,6 @@
 package com.soham.shopapi.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,35 +13,46 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "Product")
+@Table(name = "product")
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
-    private int id;
+    @Column(name = "id")
+    private Integer id;
 
-    @Column(name = "Name")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "Description")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "Brand")
+    @Column(name = "brand")
     private String brand;
 
-    @Column(name = "Price")
+    @Column(name = "price")
     private BigDecimal price;
 
-    @Column(name = "Category")
+    @Column(name = "category")
     private String category;
 
-    @Column(name = "ReleaseDate")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @Column(name = "release_date")
     private Date releaseDate;
 
-    @Column(name = "Available")
+    @Column(name = "available")
     private boolean available;
 
-    @Column(name = "Quantity")
-    private int quantity;
+    @Column(name = "quantity")
+    private Integer quantity;
+
+    @Column(name = "image_name")
+    private String imageName;
+
+    @Column(name = "image_type")
+    private String imageType;
+
+    @Lob
+    @Column(name = "image_date", columnDefinition = "MEDIUMBLOB")
+    private byte[] imageDate;
 }
